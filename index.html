@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Sound Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>you v\s AI</h1>
+    <div class="game-container">
+      <div class="options">
+        <div class="option" onclick="play('snake')">
+          <img src="snake.png" alt="Snake">
+          <span>Snake</span>
+        </div>
+        <div class="option" onclick="play('water')">
+          <img src="water.png" alt="Water">
+          <span>Water</span>
+        </div>
+        <div class="option" onclick="play('gun')">
+          <img src="gun.png" alt="Gun">
+          <span>Gun</span>
+        </div>
+      </div>
+      <div id="result"></div>
+      <div id="user-choice"></div>
+      <div id="machine-choice"></div>
+      <audio id="snake-sound" src="snake.mp3"></audio>
+      <audio id="water-sound" src="water.mp3"></audio>
+      <audio id="gun-sound" src="gun.mp3"></audio>
+    </div>
+    <table rules="rows">
+    <p> Snake water gun game is a game which requires two players both have to select something from snake or water or gun. </p>
+    <p> >>snake wins over water</p>
+    <p> >>gun win over snake </p>
+    <p> >>water wins over gun </p> 
+    <p> ultimately the player with maximum points wins the game</p>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
